@@ -1,0 +1,129 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: linear-gradient(90deg, rgba(2,0,36,0.2) 0%, rgba(16,202,183,0.2) 37%, rgba(0,212,255,0.2) 70%), url(../imgs/background.jpg);
+	font-family: 'Jost', sans-serif;
+	background-position: center;
+	background-size: cover;
+	backdrop-filter: blur(5px);
+}
+
+.main{
+	width: 400px;
+	height: 670px;
+	background-color: #000;
+	opacity: 0.9;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+}
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 40px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+.input{
+	position: relative;
+	display: flex;
+}
+.input span{
+	position: absolute;
+	left: 300px;
+	top:20px
+}
+.input span i{
+	color: #10cab7;
+}
+.input span .fa-eye{
+	cursor: pointer;
+	transition: 0.2s;
+}
+.input span .fa-eye:hover{
+	cursor: pointer;
+	font-size: 1.1em;
+}
+input{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 8px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #10cab7;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #12f2dc;
+}
+.login{
+	height: 740px;
+	background: #eee;
+	border-radius: 60% / 20%;
+	transform: translateY(-150px);
+	transition: .8s ease-in-out;
+}
+.login label{
+	color: #10cab7;
+	transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-750px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+
+.error{
+	text-align:center;
+	color:#10cab7 ;
+	margin-right: 60px;
+	margin-left: 60px;
+	width: 50%;
+}
+.error p{
+	text-align:left;
+	color:#10cab7 ;
+	margin:0 60px;
+	width: 80%;
+}

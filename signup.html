@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sign up / Login Form</title>
+	<!-- font awesome library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+	<link rel="icon" href="imgs/favicon.png">
+	<link rel="stylesheet" href="css/signup.css">
+</head>
+	<body>
+		<div class="main">
+			<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form id="signup-form">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<div class="input">
+						<span class="icon"><i class="fa-solid fa-user"></i></span>
+						<input type="text" id="username" name="username" required placeholder="User Name">
+					</div>
+					<span id="username-error" class="error"></span>
+					<div class="input">
+						<span class="icon"><i class="fa-solid fa-envelope"></i></span>
+						<input type="email" id="email" name="email" placeholder="Email" required>
+					</div>
+					<span id="email-error" class="error"></span>
+					<div class="input">
+						<span class="icon"><i class="fa-solid fa-phone"></i></i></span>
+						<input type="number" id="phone" name="phone" placeholder="Phone Number" required>
+					</div>
+					<span id="phone-error" class="error"></span>
+					<div class="input">
+						<span class="icon"><i class="fa-solid fa-eye" id="toggle-password-visibility"></i></span>
+						<input type="password" id="password" name="password" required placeholder="Password">
+					</div>
+					<span id="password-error" class="error"></span>
+					<div class="input">
+						<span class="icon"><i class="fa-solid fa-eye" id="toggle-repeatpassword-visibility"></i></span>
+						<input type="password" id="repeat-password" name="repeat-password" required placeholder="Confirm Password"/>
+					</div>
+					<span id="password-match-error" class="error"></span>
+					<button type="submit">Sign Up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form id="login-form">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" id="login-email" name="email" required placeholder="Email">
+					<span id="login-email-error" class="error"></span>
+					<input type="password" id="login-password" name="password" required placeholder="Password">
+					<span id="login-password-error" class="error"></span>
+					<button type="submit">Login</button>
+				</form>
+			</div>
+		<script src="js/signup.js"></script>
+	</body>
+</html>
